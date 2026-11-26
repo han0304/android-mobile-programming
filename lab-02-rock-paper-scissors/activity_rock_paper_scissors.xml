@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_player"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玩家出拳:"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/sp_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_decide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="決定好了!"/>
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新開始"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:id="@+id/tv_computer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="電腦出拳:"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="遊戲結果:"
+        android:textSize="20sp"/>
+
+</LinearLayout>
